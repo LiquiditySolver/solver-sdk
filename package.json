@@ -1,0 +1,28 @@
+{
+  "name": "@solver/sdk",
+  "version": "0.1.0",
+  "description": "Cross-chain liquidity solver SDK. Deposit USDC on any chain, buy any coin.",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node examples/basic.js"
+  },
+  "keywords": ["cross-chain", "defi", "bridge", "swap", "usdc", "solver", "bnb", "bsc"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiquiditySolver/solver-sdk"
+  }
+}
