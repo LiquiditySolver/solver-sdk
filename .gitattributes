@@ -1,0 +1,6 @@
+# Ensure GitHub detects all languages
+*.js linguist-language=JavaScript
+*.d.ts linguist-language=TypeScript
+*.py linguist-language=Python
+*.go linguist-language=Go
+*.rs linguist-language=Rust
