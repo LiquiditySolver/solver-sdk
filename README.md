@@ -44,9 +44,9 @@ const solver = new Solver({ apiKey: 'your-api-key' });
 // 1. Get a quote
 const quote = await solver.quote({
   fromChain: 'base',
-  toChain: 'bsc',
+  toChain: 'ethereum',
   fromToken: 'USDC',
-  toToken: 'BNB',
+  toToken: 'ETH',
   amount: '100',
 });
 
@@ -100,9 +100,9 @@ Get a cross-chain swap quote.
 ```javascript
 const quote = await solver.quote({
   fromChain: 'base',       // Source chain
-  toChain: 'bsc',          // Destination chain
+  toChain: 'ethereum',          // Destination chain
   fromToken: 'USDC',       // Input token
-  toToken: 'BNB',          // Output token
+  toToken: 'ETH',          // Output token
   amount: '100',           // Amount (human-readable)
 });
 ```
@@ -160,7 +160,7 @@ const chains = await solver.chains();
 Search tokens by symbol or address.
 
 ```javascript
-const tokens = await solver.tokens('BNB');
+const tokens = await solver.tokens('ETH');
 const usdc = await solver.tokens('USDC', 'base');
 ```
 

@@ -53,4 +53,4 @@ async function findBestRoute(toChain, toToken, amount) {
   return best;
 }
 
-findBestRoute('bsc', 'BNB', '500').catch(console.error);
+findBestRoute('ethereum', 'ETH', '500').catch(console.error);

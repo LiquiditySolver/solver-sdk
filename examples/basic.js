@@ -7,12 +7,12 @@ async function main() {
   const chains = await solver.chains();
   console.log('Supported chains:', chains);
 
-  // Get a quote: swap 100 USDC from Base to BNB on BSC
+  // Get a quote: swap 100 USDC from Base to ETH on Ethereum
   const quote = await solver.quote({
     fromChain: 'base',
-    toChain: 'bsc',
+    toChain: 'ethereum',
     fromToken: 'USDC',
-    toToken: 'BNB',
+    toToken: 'ETH',
     amount: '100',
   });
 
